@@ -41,8 +41,22 @@
   print $returnValue;
   print "<br>";
   var_dump($myCar);
+ 
+  // strings 
+  $string = "Hello World!";
+  $ss = explode(" ", $string);
+  print $string;
+  echo "<br>";
+  print strlen("Hello World!");
+  print strtoupper($string);
+  echo strtolower($string);
+  print str_replace("Hello", "World!", $string);
+  echo strrev($string);
+  print_r($ss);
+  echo "<br>";
+  print substr($string, 5,6);
+  print substr($string, 5);
+  print substr($string, -5,3);
 
-  
-
-
+  phpinfo();
 ?>
